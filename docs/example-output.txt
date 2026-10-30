@@ -1,0 +1,19 @@
+
+Razer BIOS update: restart-race check v0.3.0 (read-only, changes nothing)
+-------------------------------------------------------------------------
+Laptop:   Razer Blade 16 - RZ09-0528
+BIOS now: 2.02 (dated 2026-03-02)
+Firmware update record (ESRT): version 202, last attempted 202, last status 0
+  If you tried to install a newer version and "last attempted" still shows the old one,
+  no attempt at the newer version was recorded.
+
+Reading the last 3 days of the System log ...
+2026-10-29 06:52:46  [record 660730]  flasher asked: "shutdown"; 2 s later shutdown.exe asked: "restart" [record 660732]; Kernel-Power 109 recorded action type 5 (4 = shutdown, 5 = shutdown/reset, 6 = shutdown/power-off)  ==> POSSIBLE RESTART RACE
+2026-10-29 07:27:09  [record 660960]  flasher asked: "shutdown"; 2 s later shutdown.exe asked: "restart" [record 660965]; Kernel-Power 109 recorded action type 5 (4 = shutdown, 5 = shutdown/reset, 6 = shutdown/power-off)  ==> POSSIBLE RESTART RACE
+2026-10-30 04:39:36  [record 661812]  flasher asked: "shutdown"; 2 s later shutdown.exe asked: "restart" [record 661817]; Kernel-Power 109 recorded action type 5 (4 = shutdown, 5 = shutdown/reset, 6 = shutdown/power-off)  ==> POSSIBLE RESTART RACE
+2026-10-30 07:08:06  [record 662322]  flasher asked: "shutdown"; 2.1 s later shutdown.exe asked: "restart" [record 662325]; Kernel-Power 109 recorded action type 5 (4 = shutdown, 5 = shutdown/reset, 6 = shutdown/power-off)  ==> POSSIBLE RESTART RACE
+2026-10-30 08:21:14  [record 662770]  flasher asked: "shutdown"; no shutdown.exe within 15 s; Kernel-Power 109 recorded action type 4 (4 = shutdown, 5 = shutdown/reset, 6 = shutdown/power-off)  ==> shutdown transition recorded
+
+RESULT: 4 possible restart race(s); 1 run(s) with a shutdown transition recorded; 0 run(s) unclassified.
+Possible restart-race sequence found. Verify the displayed request types and updater configuration before drawing conclusions.
+Read README.md first, and open a Razer support case. Our report is from one laptop, not a general fix.
